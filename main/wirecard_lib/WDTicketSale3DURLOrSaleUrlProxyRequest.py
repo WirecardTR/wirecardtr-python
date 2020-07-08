@@ -31,6 +31,8 @@ class WDTicketSale3DURLOrSaleUrlProxyRequest:
         OperationType.text=req.OperationType
         MPAY=SubElement(main_root,'MPAY')
         MPAY.text=req.MPAY  
+        Price=SubElement(main_root,'Price')
+        Price.text=req.Price
         PaymentContent=SubElement(main_root,'PaymentContent')
         PaymentContent.text=req.PaymentContent
         ErrorURL=SubElement(main_root,'ErrorURL')
